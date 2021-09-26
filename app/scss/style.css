@@ -16,9 +16,15 @@ body {
   width: 100%;
   height: auto;
   font-size: 1.125rem;
+  font-weight: 600;
   font-size: 100%;
   font-family: 'Barlow', sans-serif;
   overflow: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .flex {
@@ -49,16 +55,53 @@ body {
 .main {
   width: 100%;
   height: 100vh;
-  background: url("../../images/desktop/image-header.jpg") center;
-  background-size: contain;
+  background: url("../../images/desktop/image-header.jpg") center no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-.main .header .logo {
-  justify-self: flex-start;
+.main .header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 4rem;
 }
 
-.main .header .links {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.main .links .link {
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.main .links #contact {
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  padding: 1em 2em;
+  color: #19536b;
+  font-family: "Fraunces";
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0 0.5rem #a7abae;
+          box-shadow: 0 0 0.5rem #a7abae;
+}
+
+.main .links #contact:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+  -webkit-box-shadow: 0 0 0.3rem rgba(170, 170, 170, 0.172);
+          box-shadow: 0 0 0.3rem rgba(170, 170, 170, 0.172);
+}
+
+.main .title {
+  font-family: "Fraunces";
+  padding-top: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.875rem;
+  letter-spacing: 10px;
 }
 /*# sourceMappingURL=style.css.map */
