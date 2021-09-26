@@ -1,0 +1,60 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+$soft_red: hsl(7, 99%, 70%);
+$yellow:hsl(51, 100%, 49%);
+$dark_desaturated :hsl(167, 40%, 24%); //cyan (graphic design text)
+$dark_blue :hsl(198, 62%, 26%); //(photography text)
+$dark_moderate:hsl(168, 34%, 41%); // cyan (footer)
+
+// ### Neutral
+
+$very_dark_desaturated_blue: hsl(212, 27%, 19%);
+$very_dark_grayish_blue: hsl(213, 9%, 39%);
+$dark_grayish_blue: hsl(232, 10%, 55%);
+$grayish_blue: hsl(210, 4%, 67%);
+$white:hsl(0, 0%, 100%);
+
+// ## Typography
+
+// ### Body Copy
+
+$font: 18;
+
+// ### Font
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+$barlow:600;
+$fraunces_bold:700; 
+$fraunces_bolder:900; 
+
+// - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+// - Weights: 600
+// - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+// - Weights: 700, 900
+
+// ## Icons
+
+
+// We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
+
+// - [Font Awesome](https://fontawesome.com)
+// - [IcoMoon](https://icomoon.io)
+// - [Ionicons](https://ionicons.com)
+
+
+@function toRem($px){
+    @return ($px / 16) *1rem
+}
