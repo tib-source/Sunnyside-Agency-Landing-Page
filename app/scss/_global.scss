@@ -1,6 +1,8 @@
 
 html{
     box-sizing: border-box;
+    font-size: toRem(18);
+
 }
 
 * , *::after , *::before {
@@ -13,7 +15,6 @@ body{
     padding: 0;
     width: 100%;
     height: auto;
-    font-size: toRem($font);
     font-weight: $barlow;
     font-size: 100%;
     font-family: 'Barlow', sans-serif;
