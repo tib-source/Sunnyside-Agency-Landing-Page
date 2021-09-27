@@ -113,6 +113,7 @@
     .left{
         line-height: 1.5;
         position: relative;
+        width: 50%;
         img{
             width: 100%;
             height: 100%;
@@ -122,14 +123,15 @@
             position: absolute;
             width: 47%;
             text-align: center;
-            left: 30%;
-            bottom: 2rem;
-            font-size: toRem(16);
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 4rem;
+            font-size: toRem(21);
             color: $dark_desaturated;
         }
     }
     &__subtitle{
-        font-size: toRem(26);
+        font-size: toRem(28);
         font-family: $fran;
         font-weight: $fraunces_bolder;
     }
@@ -160,6 +162,7 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         color: $grayish_blue;
+        font-size: toRem(24);
         font-family: "Fraunces";
         font-weight: $fraunces_bolder;
     }
@@ -264,7 +267,8 @@
             padding: 1em 1em  ;
         }
         .display{
-            display: none;
+            visibility: hidden;
+            opacity: 0;
         }
         .links{
             margin: auto;
@@ -275,21 +279,22 @@
             background-color: $card_color;
             width: 90%;
             left: 5%;
-            top: 15%;
+            top: 10%;
 
+            .link{
+                color: $dark_grayish_blue;
+                margin: 1em 0;
+    
+                
+            }
 
             #contact{
                 background-color: $yellow;
-                margin: 1.5rem 0;
+                margin: 1rem 0 1.5em;
             }
         }
 
-        .link{
-            color: $dark_grayish_blue;
-            padding: 1.5rem 0 0 0;
-
-            
-        }
+      
 
 
     }
@@ -330,7 +335,9 @@
     .content {
         .reversed{flex-direction: column;}
         .left{
+            width: 100%;
             .inpic{
+                font-size: 80%;
                 bottom: 2em;
                 line-height: 1.5;
                 left: 50%;

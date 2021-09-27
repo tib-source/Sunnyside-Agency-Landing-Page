@@ -8,6 +8,8 @@ html {
 *, *::after, *::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   font-size: 100%;
   font-size: 1.125rem;
   font-family: 'Barlow', sans-serif;
-  overflow: scroll;
+  overflow: auto;
 }
 
 a {
@@ -154,6 +156,7 @@ a {
 .content .left {
   line-height: 1.5;
   position: relative;
+  width: 50%;
 }
 
 .content .left img {
@@ -165,14 +168,16 @@ a {
   position: absolute;
   width: 47%;
   text-align: center;
-  left: 30%;
-  bottom: 2rem;
-  font-size: 1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 4rem;
+  font-size: 1.3125rem;
   color: #25564b;
 }
 
 .content__subtitle {
-  font-size: 1.625rem;
+  font-size: 1.75rem;
   font-family: "Fraunces";
   font-weight: 900;
 }
@@ -196,6 +201,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #a7abae;
+  font-size: 1.5rem;
   font-family: "Fraunces";
   font-weight: 900;
 }
@@ -306,7 +312,8 @@ a {
     padding: 1em 1em;
   }
   .main .display {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
   .main .links {
     margin: auto;
@@ -324,15 +331,15 @@ a {
     background-color: #fffbf8;
     width: 90%;
     left: 5%;
-    top: 15%;
+    top: 10%;
+  }
+  .main .links .link {
+    color: #818498;
+    margin: 1em 0;
   }
   .main .links #contact {
     background-color: #fad400;
-    margin: 1.5rem 0;
-  }
-  .main .link {
-    color: #818498;
-    padding: 1.5rem 0 0 0;
+    margin: 1rem 0 1.5em;
   }
   article {
     -webkit-box-orient: vertical;
@@ -371,7 +378,11 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .content .left {
+    width: 100%;
+  }
   .content .left .inpic {
+    font-size: 80%;
     bottom: 2em;
     line-height: 1.5;
     left: 50%;
