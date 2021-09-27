@@ -17,7 +17,7 @@ body {
   height: auto;
   font-weight: 600;
   font-size: 100%;
-  line-height: 1.5;
+  font-size: 1.125rem;
   font-family: 'Barlow', sans-serif;
   overflow: auto;
 }
@@ -68,10 +68,7 @@ a {
 }
 
 .main .links .link {
-  margin-top: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 0;
+  margin: 0 2rem;
 }
 
 .main .links #contact {
@@ -84,15 +81,11 @@ a {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-box-shadow: 0 0 0.5rem #a7abae;
-          box-shadow: 0 0 0.5rem #a7abae;
 }
 
 .main .links #contact:hover {
   color: white;
-  background-color: rgba(255, 255, 255, 0.08);
-  -webkit-box-shadow: 0 0 0.3rem rgba(170, 170, 170, 0.172);
-          box-shadow: 0 0 0.3rem rgba(170, 170, 170, 0.172);
+  background-color: rgba(199, 248, 253, 0.426);
 }
 
 .main .title {
@@ -101,12 +94,74 @@ a {
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  font-size: 1.875rem;
+  font-size: 2.8125rem;
   letter-spacing: 10px;
 }
 
 .content {
   width: 100%;
+}
+
+.content .reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content .card {
+  width: 100%;
+}
+
+.content .card picture {
+  width: 50%;
+}
+
+.content .card picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.content__title {
+  font-size: 3.3125rem;
+  font-family: "Fraunces";
+}
+
+.content__text {
+  color: #818498;
+  line-height: 1.5;
+  margin: 3rem 0;
+  font-size: 1.4375rem;
+}
+
+.content a {
+  color: #19536b;
+  font-family: "Fraunces";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content .section {
+  width: 50%;
+  padding: 10rem 10rem 10rem 13rem;
+  background-color: #fffbf8;
+}
+
+.content .left {
+  position: relative;
+}
+
+.content .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .left .inpic {
+  position: absolute;
+  width: 47%;
+  text-align: center;
+  left: 30%;
+  bottom: 2rem;
 }
 
 .testimonial {
@@ -141,7 +196,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0em 1em 0 1em;
+  margin: 0em 2em 0 1em;
 }
 
 .testimonial .review .name {
@@ -150,13 +205,14 @@ a {
 
 .testimonial .review .field {
   color: #a7abae;
-  font-size: 0.625rem;
+  font-size: 0.8125rem;
 }
 
 .testimonial .review p {
-  color: #818498;
+  color: #25564b;
   font-weight: 600;
-  font-size: 0.8125rem;
+  font-size: 0.90625rem;
+  line-height: 1.5;
 }
 
 .testimonial .review > * {
@@ -232,11 +288,16 @@ a {
   .content h1 {
     font-size: 2.1875rem;
   }
+  .content .card picture {
+    width: 100%;
+  }
   .content .section {
+    width: 100%;
     padding: 2em 0em;
   }
   .content .section .info {
     width: 80%;
+    margin: auto;
   }
   .content__text {
     font-size: 1rem;
@@ -251,6 +312,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .content .left .inpic {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
   }
   .pictures img {
     -webkit-box-flex: 100%;

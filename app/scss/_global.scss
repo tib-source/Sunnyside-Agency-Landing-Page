@@ -16,7 +16,7 @@ body{
     height: auto;
     font-weight: $barlow;
     font-size: 100%;
-    line-height: 1.5;
+    font-size: toRem($font);
     font-family: 'Barlow', sans-serif;
     overflow: auto;
 }

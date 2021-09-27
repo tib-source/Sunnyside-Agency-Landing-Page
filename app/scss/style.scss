@@ -22,10 +22,7 @@
 
     .links{
         .link{
-            margin-top: 0;
-            margin-left: 1rem;
-            margin-right: 1rem;
-            margin-bottom: 0;
+            margin: 0 2rem;
         }
         #contact{
             font-size: 13px;
@@ -36,12 +33,10 @@
             font-family: "Fraunces";
             background-color: $white;
             transition: 0.4s;
-            box-shadow: 0 0 0.5rem $grayish_blue;
 
             &:hover{
                 color: white;
-                background-color:rgba(255, 255, 255, 0.08);
-                box-shadow: 0 0 0.3rem rgba(170, 170, 170, 0.172);
+                background-color:rgba(199, 248, 253, 0.426);
 
             }
         }
@@ -53,10 +48,11 @@
         text-transform: uppercase;
         text-align: center;
         font-weight: $fraunces_bolder;
-        font-size: toRem(30);
+        font-size: toRem(45);
         letter-spacing: 10px;
-
     }
+
+
 
 
 
@@ -65,11 +61,76 @@
 
 .content{
     width: 100%;
+
+    .reversed{
+        flex-direction: row-reverse;
+    }
+    .card{
+        width: 100%;        
+        picture{
+            width:50%;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+
+
+    &__title{
+        font-size: toRem(53);
+        font-family: $fran;
+    }
+
+
+    &__text{
+        color: $dark_grayish_blue ;
+        line-height: 1.5;
+        margin: 3rem 0;
+        font-size: toRem(23) ;
+    }
+
+    a{
+        color: $dark_blue;
+        font-family: $fran;
+        font-weight: $fraunces_bolder;
+        text-transform: uppercase;
+    }
+
+
+
+
+    .section{
+        width:50%;
+        padding: 10rem 10rem 10rem 13rem;
+        background-color: $card_color;
+    }
+
+    .left{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .inpic{
+            position: absolute;
+            width: 47%;
+            text-align: center;
+            left: 30%;
+            bottom: 2rem;
+        }
+    }
 }
+
+
+
+
+
 .testimonial{
     width: 100%;
     background-color: $card_color;
-
+    
 
     .clients{
         padding: 6em 0 6em 0
@@ -90,7 +151,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 0em 1em 0 1em ;
+        margin: 0em 2em 0 1em ;
 
         .name{
             font-weight: $fraunces_bolder;
@@ -98,13 +159,14 @@
 
         .field{
             color: $grayish_blue;
-            font-size: toRem(10);
+            font-size: toRem(13);
         }
 
         p{
-            color: $dark_grayish_blue;
+            color: $dark_desaturated;
             font-weight: $barlow;
-            font-size:toRem(13);
+            font-size:toRem(14.5);
+            line-height: 1.5;
         }
 
     }
@@ -176,10 +238,18 @@
         font-size: toRem(35);
     }
     .content{
+        .card {
+            picture{
+                width: 100%;
+            }
+        }
+
         .section{
+            width: 100%;
             padding:2em 0em;
             .info{
                 width: 80%;
+                margin: auto;
             }
         }
 
@@ -190,7 +260,16 @@
     .content .section #berries #orange{
         flex: 100%;
     }
-    .content .reversed{flex-direction: column;}
+    .content {
+        .reversed{flex-direction: column;}
+        .left{
+            .inpic{
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+            }
+        }
+    }
     .pictures img{
         flex: 100%;
     }
@@ -203,4 +282,5 @@
             width: 60%;
         }
     }
+
 }
