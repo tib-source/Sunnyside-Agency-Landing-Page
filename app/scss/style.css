@@ -305,6 +305,9 @@ a {
   .main .header {
     padding: 1em 1em;
   }
+  .main .display {
+    display: none;
+  }
   .main .links {
     margin: auto;
     position: absolute;
