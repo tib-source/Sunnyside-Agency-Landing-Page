@@ -417,7 +417,6 @@ a {
     letter-spacing: 3px;
   }
   .testimonial .clients {
-    font-size: 50%;
     padding: 8em 0;
   }
   .reviews {
@@ -433,7 +432,7 @@ a {
     padding: 5em 2em;
   }
   .reviews .review {
-    width: 80%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
