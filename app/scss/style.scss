@@ -108,17 +108,31 @@
     }
 
     .left{
+        line-height: 1.5;
         position: relative;
         img{
             width: 100%;
             height: 100%;
         }
         .inpic{
+            
             position: absolute;
             width: 47%;
             text-align: center;
             left: 30%;
             bottom: 2rem;
+            font-size: toRem(16);
+            color: $dark_desaturated;
+        }
+    }
+    &__subtitle{
+        font-size: toRem(26);
+        font-family: $fran;
+        font-weight: $fraunces_bolder;
+    }
+    .right{
+        .inpic{
+            color: $dark_blue;
         }
     }
 }
@@ -133,8 +147,10 @@
     
 
     .clients{
-        padding: 6em 0 6em 0
+        padding: 12em 0
     }
+
+
     &__title{
         margin: 0;
         text-align: center;
@@ -146,12 +162,12 @@
     }
 
     .review{
-        width: 15%;
+        width: 18.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 0em 2em 0 1em ;
+        margin: 0em 2em 0 2em ;
 
         .name{
             font-weight: $fraunces_bolder;
@@ -165,7 +181,7 @@
         p{
             color: $dark_desaturated;
             font-weight: $barlow;
-            font-size:toRem(14.5);
+            font-size:toRem(18);
             line-height: 1.5;
         }
 
@@ -177,7 +193,7 @@
 
     .name{
         font-family: "Fraunces";
-        font-size: toRem(15);
+        font-size: toRem(20);
         color: $dark_blue;
         margin-bottom: toRem(10);
     }
@@ -192,7 +208,8 @@
 .pictures{
     width: 100%;
     height: 500px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 
     .img{
         background-size: cover;
@@ -205,6 +222,8 @@
     background-color:hsla(168, 32%, 55%, 0.583);
     padding: 4rem 0rem 6rem 0rem;
     .icon{
+        width:200px ;
+        height: 100px;
         fill: $dark_moderate;
     }
     .link{
@@ -264,16 +283,17 @@
         .reversed{flex-direction: column;}
         .left{
             .inpic{
+                bottom: 2em;
+                line-height: 1.5;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%);
                 width: 90%;
             }
         }
     }
-    .pictures img{
-        flex: 100%;
+    .pictures{
+        grid-template-columns: 50% 50%;
     }
-
     .reviews{
         flex-direction: column;
         align-items: center;

@@ -19,7 +19,7 @@ body {
   font-size: 100%;
   font-size: 1.125rem;
   font-family: 'Barlow', sans-serif;
-  overflow: auto;
+  overflow: scroll;
 }
 
 a {
@@ -148,6 +148,7 @@ a {
 }
 
 .content .left {
+  line-height: 1.5;
   position: relative;
 }
 
@@ -162,6 +163,18 @@ a {
   text-align: center;
   left: 30%;
   bottom: 2rem;
+  font-size: 1rem;
+  color: #25564b;
+}
+
+.content__subtitle {
+  font-size: 1.625rem;
+  font-family: "Fraunces";
+  font-weight: 900;
+}
+
+.content .right .inpic {
+  color: #19536b;
 }
 
 .testimonial {
@@ -170,7 +183,7 @@ a {
 }
 
 .testimonial .clients {
-  padding: 6em 0 6em 0;
+  padding: 12em 0;
 }
 
 .testimonial__title {
@@ -184,7 +197,7 @@ a {
 }
 
 .testimonial .review {
-  width: 15%;
+  width: 18.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +209,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0em 2em 0 1em;
+  margin: 0em 2em 0 2em;
 }
 
 .testimonial .review .name {
@@ -211,7 +224,7 @@ a {
 .testimonial .review p {
   color: #25564b;
   font-weight: 600;
-  font-size: 0.90625rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -221,7 +234,7 @@ a {
 
 .testimonial .name {
   font-family: "Fraunces";
-  font-size: 0.9375rem;
+  font-size: 1.25rem;
   color: #19536b;
   margin-bottom: 0.625rem;
 }
@@ -235,9 +248,10 @@ a {
 .pictures {
   width: 100%;
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 
 .pictures .img {
@@ -253,6 +267,8 @@ a {
 }
 
 .footer .icon {
+  width: 200px;
+  height: 100px;
   fill: #458c7e;
 }
 
@@ -314,15 +330,16 @@ a {
             flex-direction: column;
   }
   .content .left .inpic {
+    bottom: 2em;
+    line-height: 1.5;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     width: 90%;
   }
-  .pictures img {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+  .pictures {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
   }
   .reviews {
     -webkit-box-orient: vertical;
