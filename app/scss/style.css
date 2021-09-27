@@ -394,6 +394,14 @@ a {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
+  .testimonial__title {
+    font-size: 0.9375rem;
+    letter-spacing: 3px;
+  }
+  .testimonial .clients {
+    font-size: 50%;
+    padding: 8em 0;
+  }
   .reviews {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -403,8 +411,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .reviews .clients {
+    padding: 5em 2em;
+  }
   .reviews .review {
-    width: 60%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

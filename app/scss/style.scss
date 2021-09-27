@@ -349,12 +349,29 @@
     .pictures{
         grid-template-columns: 50% 50%;
     }
+
+    .testimonial{
+        
+        &__title{
+            font-size: toRem(15);
+            letter-spacing: 3px;
+        }
+
+        .clients{
+            font-size: 50%;
+            padding: 8em 0;
+        
+        }
+    }
     .reviews{
         flex-direction: column;
         align-items: center;
-
+        .clients{
+            padding: 5em 2em;
+        }
         .review{
-            width: 60%;
+            width: 80%;
+
         }
     }
 
