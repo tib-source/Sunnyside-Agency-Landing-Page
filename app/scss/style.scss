@@ -101,7 +101,21 @@
         text-transform: uppercase;
     }
 
+    a:before{
+        position: absolute;
+        background-color: red;
+        width: 140px;
+        margin-top:15px;
+        margin-left: -5px;
+        border-radius: 10px;
+        opacity: 0.2;
+        content: "";
+        height: 10px;
+    }
 
+    #yellow:before{
+        background-color: $yellow;
+    }
 
 
     .section{
@@ -271,6 +285,7 @@
             opacity: 0;
         }
         .links{
+            transition: 0.4s;
             margin: auto;
             position: absolute;
             justify-content: center;

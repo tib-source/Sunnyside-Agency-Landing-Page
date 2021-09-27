@@ -8,8 +8,6 @@ html {
 *, *::after, *::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 body {
@@ -27,6 +25,10 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+source {
+  height: 11%;
 }
 
 .flex {
@@ -145,6 +147,22 @@ a {
   font-family: "Fraunces";
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.content a:before {
+  position: absolute;
+  background-color: red;
+  width: 140px;
+  margin-top: 15px;
+  margin-left: -5px;
+  border-radius: 10px;
+  opacity: 0.2;
+  content: "";
+  height: 10px;
+}
+
+.content #yellow:before {
+  background-color: #fad400;
 }
 
 .content .section {
@@ -316,6 +334,8 @@ a {
     opacity: 0;
   }
   .main .links {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     margin: auto;
     position: absolute;
     -webkit-box-pack: center;
