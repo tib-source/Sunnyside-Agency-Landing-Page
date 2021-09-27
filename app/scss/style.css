@@ -31,6 +31,10 @@ source {
   height: 11%;
 }
 
+img {
+  display: block;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +179,7 @@ source {
   line-height: 1.5;
   position: relative;
   width: 50%;
+  height: auto;
 }
 
 .content .left img {
