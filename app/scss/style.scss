@@ -84,7 +84,7 @@
     }
 
     .section{
-        background-color:  #fffbf8;
+        background-color:  $card_color;
         padding: 6em 4em;
         text-align: left;
         flex: 50%;
@@ -137,4 +137,103 @@
 
     }
 
+}
+
+
+.testimonial{
+    width: 100%;
+    background-color: $card_color;
+
+
+    .clients{
+        padding: 6em 0 6em 0
+    }
+    &__title{
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $grayish_blue;
+        font-family: "Fraunces";
+        font-weight: $fraunces_bolder;
+    }
+
+    .review{
+        width: 19%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0em 1em 0 1em ;
+
+        .name{
+            font-weight: $fraunces_bolder;
+        }
+
+        .field{
+            color: $grayish_blue;
+            font-size: toRem(10);
+        }
+
+        p{
+            color: $dark_grayish_blue;
+            font-weight: $barlow;
+        }
+
+    }
+
+    .review>*{
+        margin-top: 2em;
+    }
+
+    .name{
+        font-family: "Fraunces";
+        font-size: toRem(15);
+        color: $dark_blue;
+        margin-bottom: toRem(10);
+    }
+
+
+    .profile{
+        transform: scale(0.6);
+        border-radius: 50%;
+    }
+}
+
+.pictures{
+    width: 100%;
+    height: 500px;
+    display: flex;
+
+    .img{
+        background-size: cover;
+        width: 25%;
+    }
+}
+
+.footer{
+    background-color:hsla(168, 32%, 55%, 0.583);
+    padding: 4rem 0rem 6rem 0rem;
+    .icon{
+        fill: $dark_moderate;
+    }
+    .link{
+        color:$dark_moderate;
+        margin: 0 1.5rem 0 1.5rem;
+        font-size: toRem(12);
+    }
+
+    .socials>*{
+        padding-top:1rem ;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .attribution{
+        padding-bottom: 0;
+    }
+}
+
+
+.footer>*{
+    padding-top: 2rem;
 }
