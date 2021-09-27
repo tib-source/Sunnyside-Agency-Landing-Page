@@ -1,7 +1,6 @@
 
 html{
     box-sizing: border-box;
-    font-size: toRem(18);
 
 }
 
@@ -16,7 +15,7 @@ body{
     width: 100%;
     height: auto;
     font-weight: $barlow;
-    font-size: toRem($font);
+    font-size: 100%;
     line-height: 1.5;
     font-family: 'Barlow', sans-serif;
     overflow: auto;
@@ -27,3 +26,5 @@ a{
     color: white;
     text-decoration: none;       
 }
+
+

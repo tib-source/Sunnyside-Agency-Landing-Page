@@ -64,82 +64,6 @@
 }
 
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 50% 50%;
-    color: $dark_blue;
-
-    h1{
-        font-family: "Fraunces";
-        font-weight: $fraunces_bolder;
-        font-size: toRem(36);
-    }
-
-    a{
-        color: $dark_blue;
-        font-family: "Fraunces";
-        text-transform: uppercase;
-        font-size: $fraunces_bolder;
-    }
-
-    .section{
-        background-color:  $card_color;
-        padding: 6em 4em;
-        text-align: left;
-        flex: 50%;
-
-
-        .info{
-            margin: auto;
-            width: 70%;
-        }
-    }
-
-    &__text{
-        color:$dark_grayish_blue;
-        font-weight: 100;
-        padding-bottom: 2em;
-    }
-
-    #egg{
-        order: 1;
-        background: url("./../../images/desktop/image-transform.jpg") repeat center;         
-        background-size: cover;
-        min-height: 600px;
-
-    }
-
-    #glass{
-        order: 3;
-
-        background: url("./../../images/desktop/image-stand-out.jpg") no-repeat;
-        background-size: cover;
-        min-height: 600px;
-
-    }
-    
-    #orange{
-        order: 6;
-
-        background: url("./../../images/desktop/image-photography.jpg")  repeat;
-        background-size: cover;
-        min-height: 600px;
-
-    }
-    
-    #berries{
-        order: 5;
-
-        background: url("./../../images/desktop/image-graphic-design.jpg") repeat ;
-        background-size: cover;
-        min-height: 600px;
-
-    }
-
-}
-
-
 .testimonial{
     width: 100%;
     background-color: $card_color;
@@ -159,7 +83,7 @@
     }
 
     .review{
-        width: 19%;
+        width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -178,6 +102,7 @@
         p{
             color: $dark_grayish_blue;
             font-weight: $barlow;
+            font-size:toRem(13);
         }
 
     }
@@ -207,8 +132,9 @@
 
     .img{
         background-size: cover;
-        width: 25%;
+        flex: 100%;
     }
+
 }
 
 .footer{
@@ -236,4 +162,43 @@
 
 .footer>*{
     padding-top: 2rem;
+}
+@media (max-width:900px){
+    article{
+        flex-direction: column;
+    }
+    .main .title{
+        font-size: toRem(20);
+    }
+    .content h1{
+        font-size: toRem(35);
+    }
+    .content{
+        .section{
+            padding:2em 0em;
+            .info{
+                width: 80%;
+            }
+        }
+
+        &__text{
+            font-size: toRem(16);
+        }
+    }
+    .content .section #berries #orange{
+        flex: 100%;
+    }
+    .content .reversed{flex-direction: column;}
+    .pictures img{
+        flex: 100%;
+    }
+
+    .reviews{
+        flex-direction: column;
+        align-items: center;
+
+        .review{
+            width: 60%;
+        }
+    }
 }
