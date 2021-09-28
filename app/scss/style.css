@@ -129,7 +129,7 @@ a {
 .content__title {
   font-size: 2.6875rem;
   font-family: "Fraunces";
-  padding-top: 5%;
+  margin-top: 25%;
 }
 
 .content__text {
@@ -195,6 +195,12 @@ a {
   bottom: 4rem;
   font-size: 1.3125rem;
   color: #25564b;
+}
+
+.content .left .inpic h2 {
+  font-size: 1.625rem;
+  font-weight: 900;
+  font-family: "Fraunces";
 }
 
 .content__subtitle {

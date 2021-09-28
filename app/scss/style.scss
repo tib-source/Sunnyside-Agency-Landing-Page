@@ -84,7 +84,7 @@
     &__title{
         font-size: toRem(43);
         font-family: $fran;
-        padding-top: 5%;
+        margin-top: 25%;
     }
 
 
@@ -150,6 +150,12 @@
             bottom: 4rem;
             font-size: toRem(21);
             color: $dark_desaturated;
+
+            h2{
+                font-size: toRem(26);
+                font-weight: $fraunces_bolder;
+                font-family: $fran;
+            }
         }
     }
     &__subtitle{
