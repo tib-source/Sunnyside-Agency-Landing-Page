@@ -82,8 +82,9 @@
 
 
     &__title{
-        font-size: toRem(53);
+        font-size: toRem(43);
         font-family: $fran;
+        padding-top: 5%;
     }
 
 
@@ -91,7 +92,7 @@
         color: $dark_grayish_blue ;
         line-height: 1.5;
         margin: 3rem 0;
-        font-size: toRem(23) ;
+        font-size: toRem(18) ;
     }
 
     a{
@@ -119,8 +120,13 @@
 
 
     .section{
+
+        .info{
+
+            width: 65%;
+            margin: auto;
+        }
         width:50%;
-        padding: 10rem 10rem 10rem 13rem;
         background-color: $card_color;
     }
 
@@ -327,6 +333,8 @@
         font-size: toRem(35);
     }
     .content{
+        text-align: center;
+
         .card {
             picture{
                 width: 100%;
@@ -341,7 +349,9 @@
                 margin: auto;
             }
         }
-
+        &__title{
+            font-size: 35px;
+        }
         &__text{
             font-size: toRem(16);
         }
@@ -353,6 +363,13 @@
         .reversed{flex-direction: column;}
         .left{
             width: 100%;
+
+            
+            h2{
+                font-weight: $fraunces_bolder;
+                font-family: $fran;
+                font-size: toRem(26);
+            }
             .inpic{
                 font-size: 80%;
                 bottom: 2em;
@@ -360,6 +377,7 @@
                 left: 50%;
                 transform: translate(-50%);
                 width: 90%;
+
             }
         }
     }
@@ -375,7 +393,6 @@
         }
 
         .clients{
-
             padding: 8em 0;
         
         }

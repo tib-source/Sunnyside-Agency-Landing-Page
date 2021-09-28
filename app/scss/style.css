@@ -127,15 +127,16 @@ a {
 }
 
 .content__title {
-  font-size: 3.3125rem;
+  font-size: 2.6875rem;
   font-family: "Fraunces";
+  padding-top: 5%;
 }
 
 .content__text {
   color: #818498;
   line-height: 1.5;
   margin: 3rem 0;
-  font-size: 1.4375rem;
+  font-size: 1.125rem;
 }
 
 .content a {
@@ -163,8 +164,12 @@ a {
 
 .content .section {
   width: 50%;
-  padding: 10rem 10rem 10rem 13rem;
   background-color: #fffbf8;
+}
+
+.content .section .info {
+  width: 65%;
+  margin: auto;
 }
 
 .content .left {
@@ -371,6 +376,9 @@ a {
   .content h1 {
     font-size: 2.1875rem;
   }
+  .content {
+    text-align: center;
+  }
   .content .card picture {
     width: 100%;
   }
@@ -381,6 +389,9 @@ a {
   .content .section .info {
     width: 80%;
     margin: auto;
+  }
+  .content__title {
+    font-size: 35px;
   }
   .content__text {
     font-size: 1rem;
@@ -398,6 +409,11 @@ a {
   }
   .content .left {
     width: 100%;
+  }
+  .content .left h2 {
+    font-weight: 900;
+    font-family: "Fraunces";
+    font-size: 1.625rem;
   }
   .content .left .inpic {
     font-size: 80%;
